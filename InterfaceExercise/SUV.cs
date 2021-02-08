@@ -50,7 +50,7 @@ namespace InterfaceExercise
         public SUV()
         {
             var HasCargoHold = false;
-            Console.WriteLine($"The suv has a cargo hold`` { HasCargoHold}");
+            Console.WriteLine($"The suv has a cargo hold { HasCargoHold}");
         }
     }
 }
