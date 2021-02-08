@@ -14,10 +14,18 @@ namespace InterfaceExercise
         public int SeatCount { get; set; }
         public bool HasChangedGears { get; set; }
         public bool HasCargoHold { get; set; } = true;
+        public bool HasFourWheelDrive { get; set; } = true;
 
         public void Drive()
         {
-            Console.WriteLine($"{GetType().Name} now driving forward. . .");
+            if (HasFourWheelDrive == true)
+            {
+                Console.WriteLine($"4 wheel drive {GetType().Name} now driving forward. . .");
+            }
+            else
+            {
+                Console.WriteLine($"{GetType().Name} now driving forward. . .");
+            }
         }
         public void Reverse()
         {
