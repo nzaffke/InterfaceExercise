@@ -22,10 +22,6 @@ namespace InterfaceExercise
             {
                 Console.WriteLine($"4 wheel drive {GetType().Name} now driving forward. . .");
             }
-            else
-            {
-                Console.WriteLine($"{GetType().Name} now driving forward. . .");
-            }
         }
         public void Reverse()
         {
